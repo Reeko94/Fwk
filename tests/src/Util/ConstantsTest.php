@@ -76,31 +76,4 @@ class ConstantsTest extends TestCase
             $this->assertSame(APP_ROOT . DIRECTORY_SEPARATOR . 'data', $GLOBALS['define']['DATA_DIR']);
         }
     }
-
-    public function testDefineOther()
-    {
-        defineMock('DATA_DIR', 'data');
-        if (!defined('APP_ROOT')) {
-            defineMock('APP_ROOT', 'approot');
-        } else {
-            defineMock('APP_ROOT', APP_ROOT);
-        }
-
-        Constants::defineOthers();
-
-        $this->assertSame('data' . DIRECTORY_SEPARATOR . 'tmp', $GLOBALS['define']['TEMP_DIR']);
-        $this->assertSame('data' . DIRECTORY_SEPARATOR . 'logs', $GLOBALS['define']['LOG_DIR']);
-        $this->assertSame('data' . DIRECTORY_SEPARATOR . 'cache', $GLOBALS['define']['CACHE_DIR']);
-        $this->assertSame('app', $GLOBALS['define']['CACHE_SUFFIX']);
-        $this->assertSame('data' . DIRECTORY_SEPARATOR . 'upload', $GLOBALS['define']['UPLOAD_DIR']);
-
-        if (!defined('APP_ROOT')) {
-            $this->assertSame('approot' . DIRECTORY_SEPARATOR . 'public', $GLOBALS['define']['PUBLIC_DIR']);
-        } else {
-            $this->assertSame(APP_ROOT . DIRECTORY_SEPARATOR . 'public', $GLOBALS['define']['PUBLIC_DIR']);
-        }
-
-        $this->assertSame(DIRECTORY_SEPARATOR, $GLOBALS['define']['DS']);
-        $this->assertSame(PATH_SEPARATOR, $GLOBALS['define']['PS']);
-    }
 }
