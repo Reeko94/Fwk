@@ -4,7 +4,6 @@ namespace Fwk\Test\Http;
 
 use Fwk\Http\Response;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\HttpFoundation\Cookie;
 use Symfony\Component\HttpFoundation\Response as SFResponse;
 
 class ResponseTest extends TestCase
