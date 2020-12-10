@@ -1,11 +1,13 @@
 {
     "name": "saikurin/fwk",
     "type": "library",
+    "licence": "proprietary",
     "autoload": {
         "psr-4": {
             "Fwk\\": "src"
         }
     },
+    "minimum-stability": "stable",
     "autoload-dev": {
         "psr-4": {
             "Fwk\\Tests\\": "tests"
