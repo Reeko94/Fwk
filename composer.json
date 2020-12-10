@@ -1,6 +1,7 @@
 {
     "name": "saikurin/fwk",
     "type": "library",
+    "licence": "proprietary",
     "autoload": {
         "psr-4": {
             "Fwk\\": "src"
@@ -19,5 +20,12 @@
         "psr/cache": "^1.0",
         "symfony/symfony": "^5.2",
         "symfony/flex": "^1.11"
-    }
+    },
+    "authors": [
+        {
+            "name": "Théo Sikli",
+            "email": "theo@theo-sikli.fr",
+            "role": "Developer"
+        }
+    ]
 }
