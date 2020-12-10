@@ -27,5 +27,6 @@
             "email": "theo@theo-sikli.fr",
             "role": "Developer"
         }
-    ]
+    ],
+    "minimum-stability": "dev"
 }
