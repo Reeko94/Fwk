@@ -1,7 +1,7 @@
 {
     "name": "saikurin/fwk",
     "type": "library",
-    "licence": "proprietary",
+    "license": "proprietary",
     "autoload": {
         "psr-4": {
             "Fwk\\": "src"
